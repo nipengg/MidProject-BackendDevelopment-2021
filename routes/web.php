@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Livewire;
+use App\Http\Controllers\CourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::get('/course', [CourseController::class, 'index'])->name('course')->middleware(['auth:sanctum', 'verified']);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/course', function () {
-    return view('course');
-})->name('course');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/course', function () {
+//     return view('course');
+// })->name('course');
