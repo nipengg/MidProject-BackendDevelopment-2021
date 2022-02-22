@@ -15,33 +15,10 @@ class CourseController extends Controller
         return view('course', ['items' => $items]);
     }
 
-    public function create()
+    public function show(Course $course, $id)
     {
-        //
-    }
+        $item = Course::findOrFail($id);
 
-    public function store(Request $request)
-    {
-        //
-    }
-
-    public function show(Course $course)
-    {
-        //
-    }
-
-    public function edit(Course $course)
-    {
-        //
-    }
-
-    public function update(Request $request, Course $course)
-    {
-        //
-    }
-
-    public function destroy(Course $course)
-    {
-        //
+        return view('course.detail', ['item' => $item]);
     }
 }
