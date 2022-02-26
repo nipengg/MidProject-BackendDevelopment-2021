@@ -17,7 +17,7 @@ class CourseController extends Controller
         return view('course', ['items' => $items]);
     }
 
-    public function show(Course $course, $id)
+    public function show($id)
     {
         $userId = Auth::user()->id;
         $courseId = $id;

@@ -35,6 +35,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/about', function () {
 })->name('about');
 
 Route::post('/enroll/{id}', [EnrollController::class, 'store'])->middleware(['auth:sanctum', 'verified']);
+Route::post('/enroll/remove/{id}', [EnrollController::class, 'unenrolled'])->middleware(['auth:sanctum', 'verified']);
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/course', function () {
 //     return view('course');

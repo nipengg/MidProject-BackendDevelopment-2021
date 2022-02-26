@@ -18,7 +18,7 @@ class EnrollController extends Controller
         return view('dashboard', ['items' => $items]);
     }
 
-    public function store(Request $request, $id)
+    public function store($id)
     {
         $courseId = $id;
         $date = Carbon::now()->toDateTimeString();
@@ -31,6 +31,16 @@ class EnrollController extends Controller
         ", [$userId, $courseId, $date, $date]);
 
         DB::commit();
+
+        return redirect('/dashboard');
+    }
+
+    public function unenrolled($id)
+    {
+        $courseId = $id;
+        $userId = Auth::user()->id;
+        $en = Enroll::where('user_id', $userId)->where('course_id', $courseId);
+        $en->delete();
 
         return redirect('/dashboard');
     }
