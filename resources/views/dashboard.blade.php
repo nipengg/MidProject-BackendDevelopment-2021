@@ -10,14 +10,14 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                 <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
                     <div class="mt-8 text-2xl">
-                        Portal Class
+                        Portal Knowledge
                     </div>
 
                     <div class="mt-6 text-gray-500">
                         Prepping for the big test or want to ace your first interview?
                         Use real-world practice to reinforce what you've learned and get you ready for that big moment.
                         You can learn something totally new to advance your career. Or maybe you just want to knock off the rust.
-                        Try to get Portal Class access to a variety of courses, from machine learning to web development.
+                        Try to get Portal Knowledge access to a variety of courses, from machine learning to web development.
                     </div>
                 </div>
 
