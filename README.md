@@ -10,6 +10,7 @@ Mid Project Backend Development 2021
 2. [Instalasi](#instalasi)
     - [Spesifikasi yang Dibutuhkan](#spesifikasi)
     - [Cara Install](#cara-install)
+3. [Screenshots](#screenshots)
 
 <hr>
 
@@ -52,3 +53,21 @@ Fitur pada Aplikasi ini meliputi:
 8. `php artisan migrate --seed`
 9. `php artisan serve`
 10. Selesai
+
+## Screenshots
+
+#### Home Page
+![Home page](public/imgs/homepage1.png "Home page")
+![Home page2](public/imgs/homepage2.png "Home page2")
+
+#### About Page
+![About page](public/imgs/about.png "About page")
+
+#### Course Page
+![Course page](public/imgs/course.png "Course page")
+
+#### Course Detail Page
+![Course detail page](public/imgs/course_detail.png "Course detail page")
+
+#### Profile Page
+![Profile page](public/imgs/profile.png "Profile page")
